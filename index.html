@@ -3,219 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <title>Adam Wood - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
-
+    <script src="index.js"></script>
 </head>
 <body>
-    <!-- Header section with name and tagline -->
-    <header class="hero">
-        <h1>Adam Wood</h1>
-        <p>Computer Science & Economics Student | Aspiring Software Developer</p>
-        <!-- Dark mode toggle button -->
-        <button id="dark-mode-toggle">🌙 Toggle Dark Mode</button>
-    </header>
-    
-    <!-- Mobile menu button -->
-    <button id="menu-toggle">☰ Menu</button>
-    <!-- Navigation bar -->
-    <nav id="main-nav">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#leadership">Leadership</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
+<!-- Header section with name and tagline -->
+<header class="hero">
+    <h1>Adam Wood</h1>
+    <p>Computer Science & Economics Student | Aspiring Software Developer</p>
+    <!-- Dark mode toggle button -->
+    <button id="dark-mode-toggle">🌙 Toggle Dark Mode</button>
+</header>
+
+<!-- Mobile menu button -->
+<button id="menu-toggle">☰ Menu</button>
+<!-- Navigation bar -->
+<nav id="main-nav">
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#volunteer">Volunteer Work</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<!-- Main content area -->
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am Adam Wood, an incoming Computer Science & Economics student at
+            The University of the West Indies, Cave Hill Campus. I am passionate
+            about software development, databases, robotics, and using technology to solve practical problems.
+        </p>
+
+        <p>
+            During my time at Queen's College Barbados, I developed
+            my interest in computing through programming, robotics, and technology
+            leadership. I founded the Queen's College Robotics Club and served as
+            President of the Computer Club, where I helped students develop their
+            programming and robotics skills.
+        </p>
+
+        <p>
+            I enjoy building software projects and continuously improving my skills
+            in Python, SQL, web development, and computer science fundamentals.
+            I am currently focused on developing practical applications and gaining
+            experience through projects and professional opportunities.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <article class="education-card">
+            <h3>The University of the West Indies, Cave Hill Campus</h3>
+            <p>
+                <strong>B.Sc. Computer Science & Economics</strong><br>
+                2026 - Present
+            </p>
+            <p>
+                Building a foundation in software development, databases,
+                computer science fundamentals, economics, and applied problem-solving.
+            </p>
+        </article>
+
+        <article class="education-card">
+            <h3>Queen's College, Barbados</h3>
+            <p>
+                <strong>CAPE / A-Level Studies</strong>
+            </p>
+
+            <p><strong>Technical Subjects:</strong></p>
+            <ul>
+                <li>Computer Science</li>
+                <li>Pure Mathematics</li>
+                <li>Physics</li>
+            </ul>
+
+            <p><strong>Additional Subjects:</strong></p>
+            <ul>
+                <li>Geography</li>
+                <li>Communication Studies</li>
+                <li>Caribbean Studies</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="skills">
+        <!-- Skills list -->
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><strong>Programming:</strong> Python, C, C++ (Arduino)</li>
+            <li><strong>Databases:</strong> SQL, SQLite, relational database design, CRUD operations</li>
+            <li><strong>Tools:</strong> Git, GitHub, PyCharm, WebStorm, CLion, DataGrip, AutoCAD</li>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Other:</strong> Linux command line, robotics</li>
         </ul>
-    </nav>
-    <!-- Main content area -->
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
+    </section>
 
+    <section id="projects">
+        <!--Finance Tracker + Inventory System-->
+        <h2>Projects</h2>
+
+        <article class="project-card">
+            <h3>Personal Finance Tracker</h3>
             <p>
-                I am Adam Wood, an incoming Computer Science & Economics student at
-                The University of the West Indies, Cave Hill Campus. I am passionate
-                about software development, databases, robotics, and using technology to solve practical problems.
+                A Python and SQLite application for recording income and expenses, managing categories,
+                and managing financial transactions through a structured SQLite database system.
             </p>
-
-            <p>
-                During my time at Queen's College Barbados, I developed
-                my interest in computing through programming, robotics, and technology
-                leadership. I founded the Queen's College Robotics Club and served as
-                President of the Computer Club, where I helped students develop their
-                programming and robotics skills.
-            </p>
-
-            <p>
-                I enjoy building software projects and continuously improving my skills
-                in Python, SQL, web development, and computer science fundamentals.
-                I am currently focused on developing practical applications and gaining
-                experience through projects and professional opportunities.
-            </p>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-
-            <article class="education-card">
-                <h3>The University of the West Indies, Cave Hill Campus</h3>
-                <p>
-                    <strong>B.Sc. Computer Science & Economics</strong><br>
-                    2026 - Present
-                </p>
-                <p>
-                    Building a foundation in software development, databases,
-                    computer science fundamentals, economics, and applied problem-solving.
-                </p>
-            </article>
-
-            <article class="education-card">
-                <h3>Queen's College, Barbados</h3>
-                <p>
-                    <strong>CAPE / A-Level Studies</strong>
-                </p>
-
-                <p><strong>Technical Subjects:</strong></p>
-                <ul>
-                    <li>Computer Science</li>
-                    <li>Pure Mathematics</li>
-                    <li>Physics</li>
-                </ul>
-
-                <p><strong>Additional Subjects:</strong></p>
-                <ul>
-                    <li>Geography</li>
-                    <li>Communication Studies</li>
-                    <li>Caribbean Studies</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="skills">
-            <!-- Skills list -->
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Programming:</strong> Python, C, C++ (Arduino)</li>
-                <li><strong>Databases:</strong> SQL, SQLite, relational database design, CRUD operations</li>
-                <li><strong>Tools:</strong> Git, GitHub, PyCharm, WebStorm, CLion, DataGrip, AutoCAD</li>
-                <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
-                <li><strong>Other:</strong> Linux command line, robotics</li>
+            <ul>
+                <li>Built with Python and SQLite</li>
+                <li>Implements full CRUD functionality</li>
+                <li>Uses structured database tables and validation</li>
             </ul>
-        </section>
+            <a href="https://github.com/Add9treetrunks/Finance-Tracker" target="_blank">View on GitHub</a>
 
-        <section id="projects">
-            <!--Finance Tracker + Inventory System-->
-            <h2>Projects</h2>
+        </article>
 
-            <article class="project-card">
-                <h3>Personal Finance Tracker</h3>
-                <p>
-                    A Python and SQLite application for recording income and expenses, managing categories,
-                    and managing financial transactions through a structured SQLite database system.
-                </p>
-                <ul>
-                    <li>Built with Python and SQLite</li>
-                    <li>Implements full CRUD functionality</li>
-                    <li>Uses structured database tables and validation</li>
-                </ul>
-                <a href="https://github.com/Add9treetrunks/Finance-Tracker" target="_blank">View on GitHub</a>
-
-            </article>
-
-            <article class="project-card">
-                <h3>Inventory Management System</h3>
-                <p>
-                    A database-driven inventory management application that tracks products,
-                    categories, stock levels, and inventory value.
-                </p>
-                <ul>
-                    <li>Relational database design with foreign keys</li>
-                    <li>Stock management and reporting features</li>
-                    <li>Low-stock reporting and inventory value calculations</li>
-                </ul>
-                <a href="https://github.com/Add9treetrunks/Inventory-Management-System" target="_blank">View on GitHub</a>
-            </article>
-        </section>
-
-        <section id="leadership">
-            <h2>Leadership & Experience</h2>
-
-            <article class="leadership-card">
-                <h3>President - Queen's College Computer Club (2022 - 2024)</h3>
-                <p>
-                    Led the Computer Club by organizing programming activities,
-                    competitions, and learning sessions. Hosted a junior robotics
-                    competition featuring maze-solving and creative robot challenges,
-                    serving as the event's head judge and documenting the competition.
-                </p>
-
-                <p>
-                    Also organized programming challenges, including Python-based
-                    competitions, to encourage students to develop their technical skills.
-                </p>
-            </article>
-
-            <article class="leadership-card">
-                <h3>Computer Club Advisor</h3>
-                <p>
-                    Continued supporting club activities after serving as president by
-                    mentoring students and occasionally teaching programming concepts.
-                </p>
-            </article>
-            
-            <article class="leadership-card">
-                <h3>Founder - Queen's College Robotics Club (2024 - 2026)</h3>
-                <p>
-                    Founded the school's Robotics Club to introduce students to robotics
-                    and programming. Designed a two-level learning structure where junior
-                    students explored VEX IQ robotics while senior students worked with
-                    Arduino-based projects.
-                </p>
-            </article>
-            
-            <article class="leadership-card">
-                <h3>Prefect - Queen's College</h3>
-                <p><strong>2024 - 2026</strong></p>
-                <p>
-                    Served as a student leader for two academic years, supporting school
-                    events, student activities, and prefect responsibilities while
-                    demonstrating leadership, communication, and teamwork skills.
-                </p>
-            </article>
-        </section>
-
-        <section id="achievements" >
-            <!--Shows my achievements-->
-            <h2>Achievements</h2>
-
-            <ul class="achievement-list">
-                <li>Queen's College Honor Roll recipient for three consecutive years</li>
-                <li>Recipient of the Queen's College Geography Award (Speech Day Award)</li>
-                <li>Ranked among the top students in the Caribbean for CSEC Industrial Technology (Mechanical)</li>
-                <li>Served as Form Captain at Queen's College</li>
+        <article class="project-card">
+            <h3>Inventory Management System</h3>
+            <p>
+                A database-driven inventory management application that tracks products,
+                categories, stock levels, and inventory value.
+            </p>
+            <ul>
+                <li>Relational database design with foreign keys</li>
+                <li>Stock management and reporting features</li>
+                <li>Low-stock reporting and inventory value calculations</li>
             </ul>
-        </section>
+            <a href="https://github.com/Add9treetrunks/Inventory-Management-System" target="_blank">View on GitHub</a>
+        </article>
 
-        <section id="contact">
-            <!--Contact info-->
-            <h2>Contact</h2>
-            <div class="contact-list">
-                <p>Email: <a href="mailto:adamvwood@gmail.com">adamvwood@gmail.com</a></p>
-                <p>GitHub: <a href="https://github.com/AdamVWood" target="_blank">AdamVWood</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/adam-v-wood/" target="_blank">Adam V Wood</a></p>
-                <p>Location: <a href="https://www.google.com/maps/place/Barbados/" target="_blank">Barbados</a> </p>
-            </div>
-        </section>
-    </main>
+        <article class="project-card">
+            <h3>Personal Budget & Investment Dashboard</h3>
+            <p>A web-based dashboard for tracking budgets, spending, and investments, built for long-term personal use.</p>
+            <ul>
+                <li>Built with Python (Flask) and SQLite</li>
+                <li>Front end in HTML, CSS, and JavaScript</li>
+                <li>Combines budgeting and investment tracking in one view</li>
+            </ul>
+            <a href="https://github.com/AdamVWood/finance-dashboard" target="_blank">View on GitHub</a>
+        </article>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Adam Wood. All rights reserved.</p>
-    </footer>
+    <section id="experience">
+        <!--Work experience-->
+        <h2>Work Experience</h2>
 
-    <!-- External JavaScript file for dark mode + mobile menu -->
-    <script src="index.js"></script>
+        <article class="leadership-card">
+            <h3>Warehouse Assistant - CARGO BGI</h3>
+            <p><strong>Jun 2025 - Aug 2025</strong> | Seasonal</p>
+            <p>
+                Retrieved, organized, and prepared packages for collection and
+                distribution, maintaining accurate handling of inventory while
+                following workplace procedures and safety guidelines.
+            </p>
+        </article>
+
+        <article class="leadership-card">
+            <h3>Warehouse & Customer Service Assistant - CARGO BGI</h3>
+            <p><strong>Jun 2024 - Aug 2024</strong> | Seasonal</p>
+            <p>
+                Prepared and organized customer packages for collection and supported
+                the call center by answering customer inquiries and communicating
+                order information.
+            </p>
+        </article>
+    </section>
+
+    <section id="leadership">
+        <h2>Leadership</h2>
+
+        <article class="leadership-card">
+            <h3>President - Queen's College Computer Club (2022 - 2024)</h3>
+            <p>
+                Led the Computer Club by organizing programming activities,
+                competitions, and learning sessions. Hosted a junior robotics
+                competition featuring maze-solving and creative robot challenges,
+                serving as the event's head judge and documenting the competition.
+            </p>
+
+            <p>
+                Also organized programming challenges, including Python-based
+                competitions, to encourage students to develop their technical skills.
+            </p>
+        </article>
+
+        <article class="leadership-card">
+            <h3>Computer Club Advisor</h3>
+            <p>
+                Continued supporting club activities after serving as president by
+                mentoring students and occasionally teaching programming concepts.
+            </p>
+        </article>
+
+        <article class="leadership-card">
+            <h3>Founder - Queen's College Robotics Club (2024 - 2026)</h3>
+            <p>
+                Founded the school's Robotics Club to introduce students to robotics
+                and programming. Designed a two-level learning structure where junior
+                students explored VEX IQ robotics while senior students worked with
+                Arduino-based projects.
+            </p>
+        </article>
+
+        <article class="leadership-card">
+            <h3>Prefect - Queen's College</h3>
+            <p><strong>2024 - 2026</strong></p>
+            <p>
+                Served as a student leader for two academic years, supporting school
+                events, student activities, and prefect responsibilities while
+                demonstrating leadership, communication, and teamwork skills.
+            </p>
+        </article>
+    </section>
+
+    <section id="volunteer">
+        <!--Volunteer work-->
+        <h2>Volunteer Work</h2>
+
+        <article class="leadership-card">
+            <h3>Bookkeeping Volunteer - A.R.C Accounting Services</h3>
+            <p><strong>Oct 2026 - Present</strong></p>
+            <p>
+                Volunteering through the UWI Give Back Program as part of my
+                scholarship. Support the firm's bookkeeping by entering and updating
+                financial records accurately, gaining practical experience in
+                business and financial data handling.
+            </p>
+        </article>
+    </section>
+
+    <section id="achievements" >
+        <!--Shows my achievements-->
+        <h2>Achievements</h2>
+
+        <ul class="achievement-list">
+            <li>Queen's College Honor Roll recipient for three consecutive years</li>
+            <li>Recipient of the Queen's College Geography Award (Speech Day Award)</li>
+            <li>Ranked among the top students in the Caribbean for CSEC Industrial Technology (Mechanical)</li>
+            <li>Served as Form Captain at Queen's College</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <!--Contact info-->
+        <h2>Contact</h2>
+        <div class="contact-list">
+            <p>Email: <a href="mailto:adamvwood@gmail.com">adamvwood@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/AdamVWood" target="_blank">AdamVWood</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/adam-v-wood/" target="_blank">Adam V Wood</a></p>
+            <p>Location: <a href="https://www.google.com/maps/place/Barbados/" target="_blank">Barbados</a> </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Adam Wood. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
