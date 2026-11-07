@@ -3,14 +3,33 @@ document.addEventListener("DOMContentLoaded", () => {
     // Dark mode toggle
     const darkToggle = document.getElementById("dark-mode-toggle");
 
+    // Turn dark mode on/off and update the button text
+    function setDarkMode(isDark) {
+        document.body.classList.toggle("dark-mode", isDark);
+        if (darkToggle) {
+            darkToggle.textContent = isDark ? "☀️ Toggle Light Mode" : "🌙 Toggle Dark Mode";
+        }
+    }
+
+    // Use the saved choice if there is one, otherwise follow the device setting
+    let savedTheme = null;
+    try {
+        savedTheme = localStorage.getItem("theme");
+    } catch (e) {
+        // Storage can be blocked (e.g. private browsing); just use the default
+    }
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setDarkMode(savedTheme ? savedTheme === "dark" : prefersDark);
+
     if (darkToggle) {
         darkToggle.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-            // Change button text depending on state
-            if (document.body.classList.contains("dark-mode")) {
-                darkToggle.textContent = "☀️ Toggle Light Mode";
-            } else {
-                darkToggle.textContent = "🌙 Toggle Dark Mode";
+            const isDark = !document.body.classList.contains("dark-mode");
+            setDarkMode(isDark);
+            // Remember the choice for next visit
+            try {
+                localStorage.setItem("theme", isDark ? "dark" : "light");
+            } catch (e) {
+                // Ignore if storage is unavailable
             }
         });
     }
@@ -69,4 +88,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-});
+    // Back to top button: show it once the user scrolls down
+    const backToTop = document.getElementById("back-to-top");
+
+    if (backToTop) {
+        const updateBackToTop = () => {
+            backToTop.classList.toggle("visible", window.scrollY > 400);
+        };
+        window.addEventListener("scroll", updateBackToTop, { passive: true });
+        updateBackToTop();
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    }
+
+    // Highlight the nav link for the section currently on screen
+    const navLinks = document.querySelectorAll("#main-nav a");
+    const sections = document.querySelectorAll("main section[id]");
+
+    if ("IntersectionObserver" in window && navLinks.length && sections.length) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle("current", link.getAttribute("href") === "#" + entry.target.id);
+                    });
+                }
+            });
+        }, {
+            // A section counts as "current" when it crosses the middle of the screen
+            rootMargin: "-45% 0px -50% 0px"
+        });
+
+        sections.forEach(section => observer.observe(section));
+    }
+
+});

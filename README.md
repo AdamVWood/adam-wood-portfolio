@@ -12,8 +12,10 @@ It was created as part of my web development learning phase to practice building
 
 * Responsive design for desktop and mobile devices
 * Mobile navigation menu with animated opening and closing
-* Dark mode toggle
+* Dark mode toggle that remembers your choice and follows your device setting by default
 * Smooth scrolling navigation
+* Navigation highlights the section currently on screen
+* Back to top button
 * About section introducing my background and interests
 * Education section covering my university and secondary education
 * Skills section highlighting technical abilities
@@ -115,7 +117,6 @@ The project focuses on learning how websites are:
 ## Future Improvements
 
 * Add additional projects
-* Add a back to top button
 * Add images
 * Add a major full-stack project
 * Improve animations and transitions
@@ -124,7 +125,7 @@ The project focuses on learning how websites are:
 * Continue improving accessibility
 * Expand JavaScript functionality
 * Continue documenting volunteer and community service experiences
-* Add volunteer hour tracking/progress
+* Add volunteer hours progress to the Volunteer Work section (e.g. "12 / 150 hours" with a progress bar toward the UWI Give Back Programme requirement)
 
 ## Live Website
 
