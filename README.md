@@ -1,10 +1,10 @@
 # Adam Wood Portfolio
 
-A responsive personal portfolio website built with HTML, CSS, and JavaScript to showcase my projects, technical skills, education, leadership experience, achievements, and community involvement as a Computer Science & Economics student.
+A responsive personal portfolio website built with HTML, CSS, and JavaScript to showcase my projects, technical skills, education, work experience, leadership, achievements, and community involvement as a Computer Science & Economics student.
 
 ## Overview
 
-This portfolio website serves as a central place to showcase my programming projects, technical skills, education, leadership experience, achievements, volunteer work, and professional development.
+This portfolio website serves as a central place to showcase my programming projects, technical skills, education, work experience, leadership, achievements, volunteer work, and professional development.
 
 It was created as part of my web development learning phase to practice building responsive and interactive websites using core frontend technologies while building a professional online presence.
 
@@ -18,10 +18,11 @@ It was created as part of my web development learning phase to practice building
 * Education section covering my university and secondary education
 * Skills section highlighting technical abilities
 * Projects section showcasing completed software projects
-* Leadership and experience section
-* Volunteer & Community Service section
+* Work Experience section
+* Leadership section
+* Volunteer Work section
 * Achievements section
-* Contact section with email, GitHub, and location links
+* Contact section with email, GitHub, LinkedIn, and location links
 
 ## Technologies Used
 
@@ -34,7 +35,7 @@ It was created as part of my web development learning phase to practice building
 
 ### Personal Finance Tracker
 
-A Python and SQLite application for managing financial transactions, including income, expenses, categories, and transaction management.
+A Python and SQLite application for recording income and expenses, managing categories, and managing financial transactions with full CRUD functionality.
 
 Technologies:
 
@@ -46,7 +47,7 @@ Technologies:
 
 ### Inventory Management System
 
-A Python and SQLite inventory management application featuring relational database design, foreign keys, stock management, CRUD operations, and inventory reporting.
+A Python and SQLite inventory management application featuring relational database design, foreign keys, stock management, CRUD operations, low-stock reporting, and inventory value calculations.
 
 Technologies:
 
@@ -56,22 +57,27 @@ Technologies:
 
 [View the project on GitHub](https://github.com/Add9treetrunks/Inventory-Management-System)
 
-## Volunteer & Community Service
+### Personal Budget & Investment Dashboard
 
-A section dedicated to documenting volunteer work and community involvement completed throughout university.
+A web-based dashboard for tracking budgets, spending, and investments in one view, built for long-term personal use.
+
+Technologies:
+
+* Python (Flask)
+* SQLite
+* HTML, CSS, and JavaScript
+
+[View the project on GitHub](https://github.com/AdamVWood/finance-dashboard)
+
+## Volunteer & Community Service
 
 As part of the Barbados Government scholarship programme, I am completing 150 hours of approved volunteer service through the UWI Give Back Programme.
 
-Volunteer activities will be documented with:
+Current volunteer work:
 
-* Organization
-* Role
-* Dates
-* Hours completed
-* Description of responsibilities
-* Skills developed and/or community impact
+* **Bookkeeping Volunteer – A.R.C Accounting Services** (Oct 2026 – Present): entering and updating financial records for the firm's bookkeeping.
 
-The section will be updated throughout the academic year as additional volunteer hours and experiences are completed.
+Each volunteer entry on the site documents the organization, role, dates, and responsibilities. The section will be updated throughout the academic year as additional volunteer hours and experiences are completed.
 
 ## Project Structure
 
@@ -81,8 +87,17 @@ adam-wood-portfolio/
 ├── index.html        # Main webpage structure
 ├── style.css         # Website styling
 ├── index.js          # JavaScript functionality
+├── package.json      # Project metadata
 │
-└── images/           # Website images and assets
+└── images/           # Website images and assets (favicon)
+```
+
+## Running Locally
+
+No build step is required. Clone the repository and open `index.html` in a browser:
+
+```bash
+git clone https://github.com/AdamVWood/adam-wood-portfolio.git
 ```
 
 ## Purpose
@@ -118,3 +133,6 @@ The project focuses on learning how websites are:
 ## Author
 
 Adam Wood
+
+* GitHub: [AdamVWood](https://github.com/AdamVWood)
+* LinkedIn: [Adam V Wood](https://www.linkedin.com/in/adam-v-wood/)
